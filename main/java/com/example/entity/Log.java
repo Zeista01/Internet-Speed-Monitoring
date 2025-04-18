@@ -1,23 +1,19 @@
 package com.example.entity;
 
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
+
 import java.time.LocalDateTime;
 
 @Entity
-@Table(name = "logs")
+@Getter
+@Setter
 public class Log {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Long id;
 
-    @ManyToOne
-    @JoinColumn(name = "user_id")
-    private User user;
-
+    private String message;
     private LocalDateTime timestamp;
-    private float speed;
-    private String status;
-
-    // Getters and Setters
 }
