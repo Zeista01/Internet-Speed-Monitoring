@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create User Account</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Create User Account</h1>
+    </header>
+
+    <main>
+        <div class="account-container">
+            <form action="/user/register" method="POST">
+                <div class="input-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                <div class="input-group">
+                    <label for="branch">Branch</label>
+                    <input type="text" id="branch" name="branch" placeholder="Enter your branch" required>
+                </div>
+                <div class="input-group">
+                    <label for="enrollment">Enrollment Number</label>
+                    <input type="text" id="enrollment" name="enrollment" placeholder="Enter your enrollment number" required>
+                </div>
+                <button type="submit" class="register-btn">Register</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 VNIT Network Center</p>
+    </footer>
+</body>
+</html>
